@@ -10,4 +10,4 @@ if __name__ == '__main__':
         db.setup()
         os.system('%s %s' % (py, 'Reg.py'))
     else:
-        os.system('%s %s' % (py, 'options.py'))
+        os.system('%s %s' % (py, 'main.py'))

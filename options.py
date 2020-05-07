@@ -44,6 +44,9 @@ class MainWin(Tk):
 
         def sea():
             os.system('%s %s' % (py,'Search.py'))
+            
+        def main():
+                os.system('%s %s' % (py, 'main.py'))     
 
         # def handle(event):
         #     if self.listTree.identify_region(event.x,event.y) == "separator":
@@ -164,7 +167,7 @@ class MainWin(Tk):
                     self.brt = Button(self, text="Issue Book", width=15, font=('Algerian', 10), command=ib).place(x=420, y=250)
                     self.brt = Button(self, text="Renew Book", width=15, font=('Algerian', 10), command=rb1).place(x=620, y=250)
                     self.brt = Button(self, text="Return Book", width=15, font=('Algerian', 10), command=ret).place(x=820, y=250)
-                    self.brt = Button(self, text="LOGOUT", width=15, font=('Algerian', 10), command=ret).place(x=900, y=100)
+                    self.brt = Button(self, text="LOGOUT", width=15, font=('Algerian', 10), command=main).place(x=900, y=100)
             except Error:
                 messagebox.showerror("Error", "Something Goes Wrong")
         check()

@@ -50,8 +50,6 @@ class MainWin(Tk):
              os.system('%s %s' % (py, 'main.py'))
              exit()
 
-                #os.system('%s %s' % (py, 'main.py'))
-
 
         # def handle(event):
         #     if self.listTree.identify_region(event.x,event.y) == "separator":

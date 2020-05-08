@@ -12,7 +12,7 @@ class MainWin(Tk):
     def __init__(self):
         super().__init__()
         self.iconbitmap(r'libico.ico')
-        self.configure(bg='light blue')
+        self.configure(bg='cyan')
         self.maxsize(1366, 768)
         self.minsize(1024,768)
         self.state('normal')
@@ -49,6 +49,8 @@ class MainWin(Tk):
              self.destroy()
              os.system('%s %s' % (py, 'main.py'))
              exit()
+
+
 
 
         # def handle(event):
@@ -152,18 +154,18 @@ class MainWin(Tk):
                         os.system('%s %s' % (py, 'Reg.py'))
                 else:
                     #label and input box
-                    self.label3 = Label(self, text='SHEPHERD LIBRARY MANAGEMENT SYSTEM', bg='light blue', font=('AlGERIAN', 30, 'bold'))
+                    self.label3 = Label(self, text='SHEPHERD LIBRARY MANAGEMENT SYSTEM', bg='cyan', font=('AlGERIAN', 30, 'bold'))
                     self.label3.place(x=100, y=30)
-                    self.label4 = Label(self, text="ENTER STUDENT/ADMIN ID", bg='light blue', font=('Arial', 18, 'bold'))
+                    self.label4 = Label(self, text="ENTER STUDENT/ADMIN ID", bg='cyan', font=('Arial', 18, 'bold'))
                     self.label4.place(x=50, y=107)
                     self.e1 = Entry(self, textvariable=self.a, width=40).place(x=405, y=107)
                     self.srt = Button(self, text='Search', width=15, font=('arial', 10),command = ser).place(x=700, y=106)
-                    self.label5 = Label(self, text='OR', bg='light blue', font=('arial',8, 'bold')).place(x=100, y=135)
-                    self.label5 = Label(self, text="ENTER THE BOOK ID", bg='light blue', font=('Arial', 18, 'bold'))
+                    self.label5 = Label(self, text='OR', bg='cyan', font=('arial',8, 'bold')).place(x=100, y=135)
+                    self.label5 = Label(self, text="ENTER THE BOOK ID", bg='cyan', font=('Arial', 18, 'bold'))
                     self.label5.place(x=50, y=150)
                     self.e2 = Entry(self, textvariable=self.b, width=40).place(x=405, y=150)
                     self.brt = Button(self, text='Find', width=15, font=('arial', 10),command = ent).place(x=700, y=150)
-                    self.label6 = Label(self, text="INFORMATION DETAILS", bg='light blue', font=('Arial', 15, 'underline', 'bold'))
+                    self.label6 = Label(self, text="INFORMATION DETAILS", bg='cyan', font=('Arial', 15, 'underline', 'bold'))
                     self.label6.place(x=25, y=300)
                     self.button = Button(self, text='Search Student', width=15, font=('Algerian', 10), command=sest).place(x=20,y=250)
                     self.button = Button(self, text='Search Book', width=15, font=('Algerian', 10), command=sea).place(x=220,y=250)
